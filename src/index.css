@@ -120,6 +120,33 @@ code {
   text-transform: uppercase;
 }
 
+ul {
+  padding-left: 1em;
+}
+
+li:not(:last-child) {
+  padding-bottom: 0.5em;
+}
+
+.highlight-box {
+  background-color: #B6C9D9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px 40px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /*
 @media only screen and (max-width: 600px)
   body {

@@ -53,6 +53,7 @@ export default function Scrollytelling() {
             .style('stroke', '#8C6887')
         }
 
+        // expenses filter
         function exp() {
             plot.transition()
             .duration(1000)
@@ -60,12 +61,13 @@ export default function Scrollytelling() {
             .style('fill', d => (+d.properties.exp_pct <= 35 && d.properties.exp_pct !== null) ? 'rgba(242, 89, 82, 0)' : 'rgba(140, 104, 135, 0)')
         }
 
+        // cap rate filter (removed +d.properties.cr_pct > 0)
         function cr() {
             plot.transition()
             .duration(1000)
-            .attr('r', d => (+d.properties.cr_pct <= 3.5 && +d.properties.cr_pct > 0 && +d.properties.cr_pct !== null) ? 3 : 2)
-            .style('stroke', d => (+d.properties.cr_pct <= 3.5 && +d.properties.cr_pct > 0 && d.properties.cr_pct !== null) ? '#FFEB4D' : 'rgba(140, 104, 135, 0.5)')
-            .style('fill', d => (+d.properties.cr_pct <= 3.5 && +d.properties.cr_pct > 0 && d.properties.cr_pct !== null) ? '#FFEB4D' : 'rgba(140, 104, 135, 0)')
+            .attr('r', d => (+d.properties.cr_pct <= 3.5 && +d.properties.cr_pct !== null) ? 2 : 1)
+            .style('stroke', d => (+d.properties.cr_pct <= 3.5 && d.properties.cr_pct !== null) ? '#FFEB4D' : 'rgba(140, 104, 135, 0.5)')
+            .style('fill', d => (+d.properties.cr_pct <= 3.5 && d.properties.cr_pct !== null) ? '#FFEB4D' : 'rgba(140, 104, 135, 0)')
         }
 
         
@@ -98,22 +100,13 @@ export default function Scrollytelling() {
           <svg id="chart" ref={svgRef}></svg>
           <div class="steps">
             <div class="step">
-              When plotting the 25,000 TCIE buildings found in the PLUTO set,
+              When plotting the 25,000 TCIE buildings found in the PLUTO set, a general shape of the five boroughs emerges. While the stacked bar chart showed raw TCIE filing counts of those buildings by year and borough, this map reveals where they are approximately located within the boroughs – while driving home the dominance of properties located in Manhattan. But how might we navigate through these tens of thousands of points?
             </div>
             <div class="step">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              non lacus non est ultrices faucibus. Nunc gravida libero eu velit
-              sagittis congue.
+              Here, properties with a history of a landlord spending under 35 percent of their total real estate income on operating expenses are marked in red. For these 12,700+ buildings, in some year between 2004 and 2019, according to TCIE filings, the landlord spent just above a third of their income on expenses. While this would be explained by a multitude of factors, one of them could be that the landlord is deferring maintenance as a tactic to push out tenants, especially in gentrifying neighborhoods (Hornbach et al. 10). This is one of numerous ways to narrow down a bit to buildings of interest.
             </div>
             <div class="step">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              non lacus non est ultrices faucibus. Nunc gravida libero eu velit
-              sagittis congue.
-            </div>
-            <div class="step">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              non lacus non est ultrices faucibus. Nunc gravida libero eu velit
-              sagittis congue.
+              Cap rates of 3.5 or lower (including negative cap rates, which would involve a negative net operating income, for example in cases where operating costs exceed income) provide another way to filter out some of the data points as seen in the less visible but still apparent spots of yellow.
             </div>
           </div>
         </div>

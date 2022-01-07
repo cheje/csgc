@@ -11,7 +11,7 @@ import Scrollytelling from './Scrollytelling'
 import Shiny from './Shiny'
 import Map3D from "./Map3D"
 import config from './config.js'
-import BelowMap from "./BelowMap"
+import End from "./End"
 import Footer from "./Footer"
 
 export default function App() {
@@ -27,7 +27,7 @@ export default function App() {
       <Scrollytelling />
       <Shiny />
       <Map3D {...config} />
-      <BelowMap />
+      <End />
       <Footer />
     </div>
   )
