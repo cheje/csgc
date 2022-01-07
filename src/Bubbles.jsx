@@ -86,18 +86,18 @@ export default function Bubbles() {
             <div className='flex-container-bubble'>
                 <div className='flex-child vis-caption'>
                     <div className='chart--title'>Who Owns the Most Buildings?</div>
-                    <br />These landlords have amassed the highest number of properties found in the TCIE data. As indicated in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>purple</span>, many of these portfolios are made up of buildings <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>Manhattan</span>.<br /><br />
+                    <br />These landlords have amassed the highest number of properties found in the TCIE data. As indicated in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>purple</span>, many of these portfolios are made up of buildings in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>Manhattan</span>. Hover over a bubble to see details.<br /><br />
                     <p className='vis-caption-small'>Data sources: TCIE, PLUTO</p>
                 </div>
                 <div className='flex-child'>
                     <svg ref={svgRef} style={{ display: 'block', margin: 'auto' }}></svg>
                     <div className="tooltip">
-                    <img alt="" />
+                        <img alt="" />
                         <div>
                             <a></a>
                             <span></span>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
