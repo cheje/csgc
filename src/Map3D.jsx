@@ -142,7 +142,7 @@ class Map extends Component {
 
 }
 
-function Chapter({id, theme, title, image, description, currentChapterID}) {
+function Chapter({id, theme, title, image, description, link, headline, currentChapterID}) {
     const classList = id === currentChapterID ? "step active" : "step";
     return (
         <div id={id} className={classList}>
@@ -155,6 +155,9 @@ function Chapter({id, theme, title, image, description, currentChapterID}) {
                 }
                 { description &&
                     <p>{description}</p>
+                }
+                { link &&
+                    <p>Source: <a href={link} target='_blank'>{headline}</a></p>
                 }
             </div>
         </div>

@@ -13,7 +13,7 @@ var config = {
             id: '',
             //title: 'Distressed Buildings',
             //image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/800px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg',
-            description: 'Scroll through to see residential buildings with residential that have been covered by local news outlets for reasons that might suggest speculation on the part of the owner.',
+            description: 'Scroll through to see residential buildings that have been covered by local news outlets for reasons that might suggest speculation on the part of the owner.',
             location: {
                 center: [-74.006, 40.7128],
                 zoom: 10,
@@ -38,70 +38,84 @@ var config = {
             ]
         },
         {
-            id: '2028420065',
-            title: '1387 Grand Concourse, Bronx',
+            id: '1002470001',
+            title: '247 Cherry Street, 275 South Street (Manhattan)',
             //image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/800px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus augue, faucibus sed bibendum vel, aliquam quis dui. Integer convallis metus ac nisl dignissim vestibulum. Maecenas eget fermentum dui, sit amet laoreet odio. Etiam eu ligula vulputate, tristique mi id, tristique arcu. Etiam ac nunc augue. In at tellus turpis. Pellentesque molestie porttitor egestas. Pellentesque tempus metus leo, eu viverra est luctus id. Vestibulum ac ipsum dictum justo dignissim molestie quis nec massa. Ut egestas vitae turpis eget fermentum.',
+            description: 'Two Bridges highrises planned for the Lower East Side waterfront',
+            link: 'https://boweryboogie.com/2021/11/chetrit-buys-into-two-bridges-waterfront-while-starrett-lists-for-100m/',
+            headline: 'Chetrit Buys into Two Bridges Waterfront While Starrett Lists for $100M',
             location: {
-                center: [-73.914617, 40.838445],
-                zoom: 18,
+                center: [-73.98904, 40.71183],
+                zoom: 16.5,
                 pitch: 75,
-                bearing: -30
-            },
-            onChapterEnter: [
-                // {
-                //     layer: 'gnpglaciers-1998',
-                //     opacity: 0.25
-                // },
-                // {
-                //     layer: 'glaciernp-boundary',
-                //     opacity: 0.25
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'glaciernp-boundary',
-                //     opacity: 0
-                // }
-            ]
+                bearing: -20
+            }
         },
         {
-            id: '2031560027',
-            title: '2055 Anthony Avenue, Bronx',
-            image: '',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum purus vitae erat suscipit scelerisque. Proin nisi nulla, varius a aliquet vel, aliquam ac enim. Nam euismod tellus vitae dui lobortis malesuada. Nullam nisl urna, hendrerit sed tincidunt ut, facilisis ac tellus. Vivamus ut arcu quis diam molestie varius.',
+            id: '1004090043',
+            title: '101 Delancey Street, 130 Orchard Street (Manhattan)',
+            //image: '',
+            description: '',
+            link: 'https://boweryboogie.com/2021/06/landlord-michael-shah-nabs-sago-hotel-on-orchard-street-for-8-5m/',
+            headline: 'Landlord Michael Shah Nabs Sago Hotel on Orchard Street for $8.5M',
             location: {
-                center: [-73.9025, 40.8525],
+                center: [-73.98891, 40.71849],
                 zoom: 18,
                 pitch: 75,
                 bearing: 25
-            },
-            onChapterEnter: [],
-            onChapterExit: [
-                // {
-                //     layer: 'gnpglaciers-2015',
-                //     opacity: 0
-                // }
-            ]
+            }
         },
         {
-            id: '3086830075',
-            title: '3100 Brighton 2 Street, Brooklyn',
-            image: '',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum purus vitae erat suscipit scelerisque. Proin nisi nulla, varius a aliquet vel, aliquam ac enim. Nam euismod tellus vitae dui lobortis malesuada. Nullam nisl urna, hendrerit sed tincidunt ut, facilisis ac tellus. Vivamus ut arcu quis diam molestie varius.',
+            id: '3023770002',
+            title: '252 Kent Avenue (Brooklyn)',
+            description: '',
+            link: 'https://www.brooklynpaper.com/city-council-votes-to-approve-river-ring-clearing-the-way-for-massive-waterfront-williamsburg-development/',
+            headline: 'City Council votes to approve River Ring, clearing the way for massive waterfront Williamsburg development',
             location: {
-                center: [-73.9652, 40.576],
+                center: [-73.96614, 40.71654],
                 zoom: 18,
                 pitch: 75,
                 bearing: 25
-            },
-            onChapterEnter: [],
-            onChapterExit: [
-                // {
-                //     layer: 'gnpglaciers-2015',
-                //     opacity: 0
-                // }
-            ]
+            }
+        },
+        {
+            id: '3011920085',
+            title: '1035 Washington Avenue (Brooklyn)',
+            description: '',
+            link: 'https://www.brooklynpaper.com/locals-blast-proposed-crown-heights-development-at-city/',
+            headline: 'Locals blast proposed Crown Heights development at City Planning Hearing',
+            location: {
+                center: [-73.96066, 40.66445],
+                zoom: 18,
+                pitch: 75,
+                bearing: 25
+            }
+        },
+        {
+            id: '4000460050',
+            title: '47-07 Vernon Boulevard, 10-12 47 Avenue (Queens)',
+            description: '',
+            link: 'https://qns.com/2021/12/new-survey-shows-hunters-point-is-third-most-apartment-crazed-neighborhood-in-u-s/',
+            headline: 'Hunters Point New survey shows Hunters Point is third most apartment-crazed neighborhood in U.S.',
+            location: {
+                center: [-73.95296, 40.74519],
+                zoom: 18,
+                pitch: 75,
+                bearing: 25
+            }
+        },
+        {
+            id: '4017210008',
+            title: '106-18 Northern Boulevard (Queens)',
+            description: '',
+            link: 'https://qns.com/2021/05/planned-25-story-luxury-development-in-corona-slated-for-completion-in-2024/',
+            headline: 'Corona Planned 25-story luxury development in Corona slated for completion in 2024',
+            location: {
+                center: [-73.86213, 40.75752],
+                zoom: 18,
+                pitch: 75,
+                bearing: 25
+            }
         }
     ]
 };
