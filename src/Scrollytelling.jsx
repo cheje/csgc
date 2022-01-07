@@ -46,12 +46,9 @@ export default function Scrollytelling() {
                 .append("circle")
                 .attr("cx", d => projection(d.geometry.coordinates)[0])
                 .attr("cy", d => projection(d.geometry.coordinates)[1])
-                
-                
-            
 
         function all() {
-            plot.attr("r", "2")
+            plot.attr("r", "1")
             .style("fill", 'rgba(115, 85, 111, 0)')
             .style('stroke', '#8C6887')
         }
@@ -101,7 +98,7 @@ export default function Scrollytelling() {
           <svg id="chart" ref={svgRef}></svg>
           <div class="steps">
             <div class="step">
-              When plotting the 25,000 TCIE buildings found in the PLUTO set, 
+              When plotting the 25,000 TCIE buildings found in the PLUTO set,
             </div>
             <div class="step">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
