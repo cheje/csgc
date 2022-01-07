@@ -1,7 +1,7 @@
 import React from "react"
 import './index.css'
 import Header from "./Header"
-import Background from "./Background"
+import Introduction from "./Introduction"
 import Dataset from "./Dataset"
 import StackedBars from './StackedBars'
 import Portfolios from './Portfolios'
@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <Background />
+      <Introduction />
       <Dataset />
       <StackedBars />
       <Portfolios />

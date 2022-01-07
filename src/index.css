@@ -39,7 +39,7 @@ a, a:hover, a:visited {
 } */
 
 .header {
-  background-image: url("/img/sbk014-black.png");
+  background-image: url("./img/sbk014-black.png");
   background-repeat: no-repeat;
   background-size: 2500px;
   background-position: 20% -260px;

@@ -1,5 +1,7 @@
 import React from 'react'
 import './index.css'
+import expensesSS from './img/shiny-expenses.png'
+import crSS from './img/shiny-cr.png'
 
 export default function Shiny() {
     return(
@@ -12,7 +14,7 @@ export default function Shiny() {
                 Pellentesque sit amet nulla elit. Etiam convallis quis purus eleifend pellentesque. Donec nec aliquam tortor. Vivamus eget mauris sapien. Aliquam eget dictum sapien, tempor posuere ipsum. Maecenas lacinia varius hendrerit. Vestibulum vehicula tincidunt pharetra. Suspendisse potenti.
                 </div>
                 <div className='flex-child'>
-                <a href='https://jenche.shinyapps.io/lpexp/' target='_blank'><img width='400px' alt='Screenshot of expenses dashboard' src='/img/shiny-expenses.png' style={{ boxShadow: '5px 10px 20px rgba(0, 0, 0, 0.3)' }}/></a>
+                <a href='https://jenche.shinyapps.io/lpexp/' target='_blank'><img width='400px' alt='Screenshot of expenses dashboard' src={expensesSS} style={{ boxShadow: '1px 2px 5px rgba(0, 0, 0, 0.1)' }}/></a>
                     <button className='button'><a href='https://jenche.shinyapps.io/lpexp/' target='_blank' className='button--link'>EXPENSES</a></button>
                 </div>
             </div>
@@ -22,7 +24,7 @@ export default function Shiny() {
                     Pellentesque sit amet nulla elit. Etiam convallis quis purus eleifend pellentesque. Donec nec aliquam tortor. Vivamus eget mauris sapien. Aliquam eget dictum sapien, tempor posuere ipsum. Maecenas lacinia varius hendrerit. Vestibulum vehicula tincidunt pharetra. Suspendisse potenti.
                 </div>
                 <div className='flex-child'>
-                <a href='https://jenche.shinyapps.io/lpcr/' target='_blank'><img width='400px' src='/img/shiny-cr.png' /></a>
+                <a href='https://jenche.shinyapps.io/lpcr/' target='_blank'><img width='400px' src={crSS} alt='Screenshot of cap rates dashboard' style={{ boxShadow: '1px 2px 5px rgba(0, 0, 0, 0.1)' }}/></a>
                     <button className='button'><a href='https://jenche.shinyapps.io/lpcr/' target='_blank' className='button--link'>CAP RATES</a></button>
                 </div>
             </div>
