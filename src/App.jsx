@@ -4,7 +4,7 @@ import Header from "./Header"
 import Introduction from "./Introduction"
 import Dataset from "./Dataset"
 import Portfolios from './Portfolios'
-import CR from "./CR"
+import FilteringData from "./FilteringData"
 import Scrollytelling from './Scrollytelling'
 import Shiny from './Shiny'
 import Map3D from "./Map3D"
@@ -19,7 +19,7 @@ export default function App() {
       <Introduction />
       <Dataset />
       <Portfolios />
-      <CR />
+      <FilteringData />
       <Scrollytelling />
       <Shiny />
       <Map3D {...config} />
