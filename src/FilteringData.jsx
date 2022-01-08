@@ -1,12 +1,12 @@
 import React from "react"
 import './index.css'
 
-export default function CR() {
+export default function FilteringData() {
     return (
         //<div style={{ boxShadow: `5px 8px 20px rgba(0, 0, 0, 0.2)` }}>
         <div>
             <section>
-                <h5 className="subsubhead">Cap Rates</h5>
+                <h4 className="subhead">Filtering the Data</h4>
                 <p>
                     For the Landlords Project, <a href='https://www.linkedin.com/in/kate-a-ham' target='_blank'>Kate Ham</a>, a housing justice advocate pursuing a master of city planning degree, added capitalization rate and sale year variables, among others, to the TCIE dataset, which they pulled from public records. Income and expenses before, after and within the year of the building sale can also help us see if speculation is occurring. For example, were there any unusually high expenses right before a sale? 
                 </p>
