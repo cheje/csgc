@@ -3,7 +3,6 @@ import './index.css'
 import Header from "./Header"
 import Introduction from "./Introduction"
 import Dataset from "./Dataset"
-import StackedBars from './StackedBars'
 import Portfolios from './Portfolios'
 import Bubbles from './Bubbles'
 import CR from "./CR"
@@ -20,7 +19,6 @@ export default function App() {
       <Header />
       <Introduction />
       <Dataset />
-      <StackedBars />
       <Portfolios />
       <Bubbles />
       <CR />

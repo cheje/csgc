@@ -25,17 +25,19 @@ export default function StackedBars() {
 
             // wrapper dimensions (following format in A. Wattenberger's 'Fullstack D3')
             const dimensions = {
-                width: window.innerWidth*0.8,
-                height: window.innerHeight*0.6,
+                // width: window.innerWidth*0.8,
+                // height: window.innerHeight*0.6,
+                width: 800,
+                height: 400,
                 margin: { top: 10, bottom: 50, left: 90, right: 50 }
             }
 
             // bounds dimensions
-            dimensions.boundedWidth = dimensions.width // 90% of window
+            dimensions.boundedWidth = dimensions.width
              - dimensions.margin.left
              - dimensions.margin.right
 
-             dimensions.boundedHeight = dimensions.height // 90% of window
+             dimensions.boundedHeight = dimensions.height
              - dimensions.margin.top
              - dimensions.margin.bottom
 
@@ -54,9 +56,7 @@ export default function StackedBars() {
                 .domain([0, 16000])
                 .range([dimensions.boundedHeight, dimensions.margin.left])
                 .nice()
-
             
-                
             // horizontal gridlines
             const yGrid = d3.axisLeft()
                 .tickFormat('')
@@ -106,8 +106,8 @@ export default function StackedBars() {
                 .attr('dy', '1em')
                 // axis label:
                 .append('text')
-                .attr('x', '50%')
-                .attr('dy', '3.5em')
+                .attr('x', '75%')
+                .attr('dy', '3.25em')
                 .text('Year of TCIE Filing')
                 
 
@@ -121,7 +121,7 @@ export default function StackedBars() {
                 // axis label:
                 .append('text')
                 .attr('y', '-5em')
-                .attr('dx', '-8%')
+                .attr('dx', '-10%')
                 .attr('transform', 'rotate(270)')
                 .text('Number of TCIE BBLs Found in PLUTO')
 
@@ -135,7 +135,7 @@ export default function StackedBars() {
                 .selectAll("squares")
                 .data(borosRev)
                 .join('rect')
-                    .attr("x", '90%')
+                    .attr("x", '85%')
                     .attr("y", (d, i) => (90 + i*20))
                     .attr("height", 10)
                     .attr("width", 10)
@@ -146,7 +146,7 @@ export default function StackedBars() {
                 .selectAll("labels")
                 .data(borosRev)
                 .join("text")
-                  .attr("x", '91.5%')
+                  .attr("x", '87%')
                   .attr("y", (d, i) => (100 + i*20)) 
                   .style("fill", d => colorScale(d))
                   .text(d => d)

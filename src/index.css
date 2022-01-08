@@ -132,7 +132,7 @@ li:not(:last-child) {
   background-color: #B6C9D9;
   padding: 20px;
   margin-top: 20px;
-  border-radius: 10px 40px;
+  border-radius: 2px 40px;
 }
 
 .arrow {
@@ -145,6 +145,31 @@ li:not(:last-child) {
 .arrow-down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+blockquote {
+  font-style: italic;
+  margin-left: 2.5em;
+  quotes: "“" "”" "“" "”";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  margin-left: -0.5em;
+  vertical-align: -0.4em;
+}
+
+blockquote::after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.1em;
+  vertical-align: -0.45em;
 }
 
 /*
@@ -166,7 +191,7 @@ li:not(:last-child) {
 }
 
 .x-axis .tick text {
-  font-size: 1.1em;
+  font-size: 0.95em;
 }
 
 /* axis title */

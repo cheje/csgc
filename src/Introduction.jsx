@@ -3,7 +3,6 @@ import './index.css'
 
 export default function Background() {
     return (
-        <div>
             <section style={{paddingTop: "50px"}}>
                 {/* <h4 className="subhead" style={{paddingTop: "50px"}}>Background</h4> */}
                 <p>
@@ -14,6 +13,5 @@ export default function Background() {
                 </p>
                 <p>For my capstone project, with the precarious NYC housing market, and speculation, as the backdrop, I will explore a dataset of Tax Commission Income and Expense (TCIE) filings and see how data visualizations can help navigate the contents and potentially find stories of displacement and distress.</p>
             </section>
-        </div>
     )
 }
