@@ -4,7 +4,6 @@ import Header from "./Header"
 import Introduction from "./Introduction"
 import Dataset from "./Dataset"
 import Portfolios from './Portfolios'
-import Bubbles from './Bubbles'
 import CR from "./CR"
 import Scrollytelling from './Scrollytelling'
 import Shiny from './Shiny'
@@ -20,7 +19,6 @@ export default function App() {
       <Introduction />
       <Dataset />
       <Portfolios />
-      <Bubbles />
       <CR />
       <Scrollytelling />
       <Shiny />

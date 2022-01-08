@@ -15,8 +15,8 @@ export default function Bubbles() {
 
             // tutorial: https://www.webtips.dev/how-to-make-interactive-bubble-charts-in-d3-js
 
-            const width = 600;
-            const height = 600;
+            const width = 550;
+            const height = 550;
 
             const colors = {
                 'Manhattan': '#3A0CA3',
@@ -43,7 +43,7 @@ export default function Bubbles() {
             .data(root.children)
             .enter()
             .append('g')
-            .attr('transform', d => `translate(${d.x}, ${d.y})`);
+            .attr('transform', d => `translate(${d.x-75}, ${d.y})`);
         
         const circle = node.append('circle')
             .attr('r', d => d.r)
@@ -85,7 +85,7 @@ export default function Bubbles() {
         <div style={{ width: '70vw', margin: '0 auto' }}>
             <div className='flex-container-bubble'>
                 <div className='flex-child vis-caption'>
-                    <div className='chart--title'>Who Owns the Most Buildings?</div>
+                    <div className='chart--title' style={{ paddingTop: '2em'}}>Who Owns the Most Buildings?</div>
                     <br />These landlords have amassed the highest number of properties found in the TCIE data. As indicated in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>purple</span>, many of these portfolios are made up of buildings in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>Manhattan</span>. Hover over a bubble to see details.<br /><br />
                     <p className='vis-caption-small'>Data sources: TCIE, PLUTO</p>
                 </div>

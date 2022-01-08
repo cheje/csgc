@@ -230,7 +230,7 @@ blockquote::after {
   font-size: 14px;
   font-family: 'Roboto', 'sans-serif';
   line-height: 1.2em;
-  padding-top: 25%;
+  /* padding-top: 25%; */
 }
 
 .vis-caption-small {
@@ -273,7 +273,7 @@ blockquote::after {
 
 .flex-container-bubble {
   display: flex;
-  padding: 1.25em;
+  padding: 0.25em;
 }
 
 .flex-child {

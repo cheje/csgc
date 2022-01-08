@@ -100,13 +100,13 @@ export default function Scrollytelling() {
           <svg id="chart" ref={svgRef}></svg>
           <div class="steps">
             <div class="step">
-              When plotting the 25,000 TCIE buildings found in the PLUTO set, a general shape of the five boroughs emerges. While the stacked bar chart showed raw TCIE filing counts of those buildings by year and borough, this map reveals where they are approximately located within the boroughs – while driving home the dominance of properties located in Manhattan. But how might we navigate through these tens of thousands of points?
+              When plotting the 25,000 TCIE buildings found in the PLUTO set, a general shape of the five boroughs emerges. While the stacked bar chart showed raw TCIE filing counts of those buildings by year and borough, this map reveals where they are approximately located within the boroughs, while driving home the dominance of properties located in Manhattan. But how might we navigate through these tens of thousands of points?
             </div>
             <div class="step">
-              Here, properties with a history of a landlord spending under 35 percent of their total real estate income on operating expenses are marked in red. For these 12,700+ buildings, in some year between 2004 and 2019, according to TCIE filings, the landlord spent just above a third of their income on expenses. While this would be explained by a multitude of factors, one of them could be that the landlord is deferring maintenance as a tactic to push out tenants, especially in gentrifying neighborhoods (Hornbach et al. 10). This is one of numerous ways to narrow down a bit to buildings of interest.
+              Here, properties with a history of a landlord spending under 35 percent of their total real estate income on operating expenses are marked in red. For these 12,700+ buildings, in some year between 2004 and 2019, according to TCIE filings, the landlord spent just above a third of their income on expenses. While this could be explained by a multitude of factors, one of them could be that the landlord is deferring maintenance as a tactic to push out tenants, especially in gentrifying neighborhoods (Hornbach et al. 2020, 10). This is one of numerous ways to narrow the data down a bit.
             </div>
             <div class="step">
-              Cap rates of 3.5 or lower (including negative cap rates, which would involve a negative net operating income, for example in cases where operating costs exceed income) provide another way to filter out some of the data points as seen in the less visible but still apparent spots of yellow.
+              Cap rates of 3.5 or lower (including negative cap rates, which would involve a negative net operating income, for example in cases where operating costs exceed income) provide another way to filter out some of the data points as seen in the less prolific but still visible spots of yellow.
             </div>
             <div class='step'>
               Continuing with using expenses and cap rates, of a certain threshold, as an approach to filtering through the data, we can isolate those points on an interactive map and find characteristics of those individual buildings through a table and chart.
