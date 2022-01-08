@@ -7,8 +7,8 @@ export default function Shiny() {
     return(
         <section>
             <div style={{ paddingBottom: '50px' }}>
-                <p>Continuing with the use of expenses and cap rates, of a certain threshold, as an approach to filtering through the data, we can isolate those points on a map and find characteristics of those individual buildings through a table and chart. Explore them in the dashboards linked below. Thousands of points still remain but in this case, you can zoom in to specific regions and see not just buildings with potential risk of speculation, but also regions where clusters exist. In those cases, large-scale development projects might be on the horizon.</p>
-                <p className='highlight-box'>The CREATE Initiative, a project that studies envrionment and equity, released its "<a href='https://create.umn.edu/toolkit/' target='_blank'>Sharing in the Benefits of a Greening City</a>" toolkit, in which the researchers cover key housing concepts such as real estate speculation. It notes that such activity occurs "where significant changes in value are anticipated" such as large-scale investments in green infrastructure development (Klein et al. 20). Investors might go after properties in or around those areas years before project completion and in the process, displacing long-time residents, increasing rent and property values; and "in doing so, speculative practices restrict who is able to access and enjoy the fruits of these investments."</p>
+                <p>Explore them in the dashboards linked below. Thousands of points still remain but in this case, you can zoom in to specific regions and see not just buildings with potential risk of speculation, but also regions where clusters exist. In those cases, large-scale development projects might be on the horizon.</p>
+                
             </div>
             <div className='flex-container-shiny'>
                 <div className='flex-child'>

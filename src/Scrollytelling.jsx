@@ -108,6 +108,9 @@ export default function Scrollytelling() {
             <div class="step">
               Cap rates of 3.5 or lower (including negative cap rates, which would involve a negative net operating income, for example in cases where operating costs exceed income) provide another way to filter out some of the data points as seen in the less visible but still apparent spots of yellow.
             </div>
+            <div class='step'>
+              Continuing with using expenses and cap rates, of a certain threshold, as an approach to filtering through the data, we can isolate those points on an interactive map and find characteristics of those individual buildings through a table and chart.
+            </div>
           </div>
         </div>
   );

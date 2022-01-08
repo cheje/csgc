@@ -121,11 +121,11 @@ code {
 }
 
 ul {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 li:not(:last-child) {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.3em;
 }
 
 .highlight-box {
@@ -133,6 +133,9 @@ li:not(:last-child) {
   padding: 20px;
   margin-top: 20px;
   border-radius: 2px 40px;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 0.85em;
+  line-height: 1.5;
 }
 
 .arrow {
