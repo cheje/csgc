@@ -9,6 +9,8 @@ import scrollama from 'scrollama';
 // eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 // Source: https://stackoverflow.com/questions/65434964/mapbox-blank-map-react-map-gl-reactjs
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+// eslint-disable-next-line import/no-unresolved eslint-disable-next-line import/no-webpack-loader-syntax
+// eslint-disable-next-line import/no-webpack-loader-syntax
 
 const layerTypes = {
     'fill': ['fill-opacity'],
