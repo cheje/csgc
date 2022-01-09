@@ -1,6 +1,6 @@
 var config = {
     style: 'mapbox://styles/jenche/ckxy9mihs40ew14phbjizimgm',
-    accessToken: 'pk.eyJ1IjoiamVuY2hlIiwiYSI6ImNreTZsYjR3YjBsbTQydWt5OWZ2Y2JmajgifQ.tiR1z-ODJJObm_OzOsw5ig', //`${process.env.REACT_APP_MAPBOX_TOKEN}`,
+    accessToken: `${process.env.REACT_APP_MAPBOX_TOKEN}`,
     showMarkers: false,
     alignment: 'right',
     theme: 'light',

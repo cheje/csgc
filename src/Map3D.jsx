@@ -3,6 +3,13 @@ import './Map3D.css';
 import mapboxgl from 'mapbox-gl';
 import scrollama from 'scrollama';
 
+// The following is required to stop "npm build" from transpiling mapbox code.
+// notice the exclamation point in the import.
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+// Source: https://stackoverflow.com/questions/65434964/mapbox-blank-map-react-map-gl-reactjs
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 const layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
