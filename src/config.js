@@ -73,7 +73,7 @@ var config = {
             headline: 'City Council votes to approve River Ring, clearing the way for massive waterfront Williamsburg development',
             location: {
                 center: [-73.96614, 40.71654],
-                zoom: 18,
+                zoom: 17,
                 pitch: 75,
                 bearing: 25
             }

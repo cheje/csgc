@@ -29,54 +29,53 @@ export default function Bubbles() {
             };
 
             const bubble = data => d3.pack()
-            .size([width, height])
-            .padding(3)(d3.hierarchy({ children: data }).sum(d => d.buildings));
-    
-        const svg = d3.select(svgRef.current)
-            .style('width', width)
-            .style('height', height);
+                .size([width, height])
+                .padding(3)(d3.hierarchy({ children: data }).sum(d => d.buildings));
         
-        const root = bubble(data);
-        const tooltip = d3.select('.tooltip');
-    
-        const node = svg.selectAll()
-            .data(root.children)
-            .enter()
-            .append('g')
-            .attr('transform', d => `translate(${d.x-75}, ${d.y})`);
+            const svg = d3.select(svgRef.current)
+                .style('width', width)
+                .style('height', height);
+            
+            const root = bubble(data);
+            const tooltip = d3.select('.tooltip');
         
-        const circle = node.append('circle')
-            .attr('r', d => d.r)
-            .style('fill', d => colors[d.data.boro_names])
-            .style('opacity', '0.7')
-            .on('mouseover', function (e, d) {
-                tooltip.select('span')
-                .attr('class', 'tooltip-text')
-                .html(`<span style="font-weight:bold; color:#FFC900;">${d.data.ownername}</span> owns <span style='font-weight:bold; color:#FFC900;' }}>${d.data.buildings} properties</span> (in <span style="font-weight:bold; color:#FFC900;">${d.data.boro_names}</span>) found in the TCIE data.`)
-                tooltip.style('visibility', 'visible');
-    
-                d3.select(this).style('stroke', '#fff');
-            })
-            .on('mousemove', e => tooltip.style('top', `${e.pageY}px`)
-                                         .style('left', `${e.pageX + 10}px`))
-            .on('mouseout', function () {
-                d3.select(this).style('stroke', 'none');
-                return tooltip.style('visibility', 'hidden');
-            })
+            const node = svg.selectAll()
+                .data(root.children)
+                .enter()
+                .append('g')
+                .attr('transform', d => `translate(${d.x-75}, ${d.y})`);
+            
+            const circle = node.append('circle')
+                .attr('r', d => d.r)
+                .style('fill', d => colors[d.data.boro_names])
+                .style('opacity', '0.7')
+                .on('mouseover', function (e, d) {
+                    tooltip.select('span')
+                    .attr('class', 'tooltip-text')
+                    .html(`<span style="font-weight:bold; color:#FFC900;">${d.data.ownername}</span> owns <span style='font-weight:bold; color:#FFC900;' }}>${d.data.buildings} properties</span> (in <span style="font-weight:bold; color:#FFC900;">${d.data.boro_names}</span>) found in the TCIE data.`)
+                    tooltip.style('visibility', 'visible');
         
-        const label = node.append('text')
-            .attr('dy', 2)
-            .text(d => d.data.ownername.substring(0, d.r / 4))
-            .attr('class', 'text--bubbles')
-        
-        circle.transition()
-            .ease(d3.easeExpInOut)
-            .duration(1000)
-            .attr('r', d => d.r);
-        
-        label.style('opacity', d => d.data.buildings >= 20 ? 1 : 0)
-       
-       })
+            d3.select(this).style('stroke', '#fff');
+                })
+                .on('mousemove', e => tooltip.style('top', `${e.pageY}px`)
+                                            .style('left', `${e.pageX + 10}px`))
+                .on('mouseout', function () {
+                    d3.select(this).style('stroke', 'none');
+                    return tooltip.style('visibility', 'hidden');
+                })
+            
+            const label = node.append('text')
+                .attr('dy', 2)
+                .text(d => d.data.ownername.substring(0, d.r / 4))
+                .attr('class', 'text--bubbles')
+            
+            circle.transition()
+                .ease(d3.easeExpInOut)
+                .duration(1000)
+                .attr('r', d => d.r);
+            
+            label.style('opacity', d => d.data.buildings >= 20 ? 1 : 0)
+        })
     }, [])
     
     
@@ -88,6 +87,16 @@ export default function Bubbles() {
                     <div className='chart--title' style={{ paddingTop: '2em'}}>Who Owns the Most Buildings?</div>
                     <br />These landlords have amassed the highest number of properties found in the TCIE data. As indicated in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>purple</span>, many of these portfolios are made up of buildings in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>Manhattan</span>. Hover over a bubble to see details.<br /><br />
                     <p className='vis-caption-small'>Data sources: TCIE, PLUTO</p>
+                    <hr className='light' />
+                    <div style= {{ textAlign: 'right' }}>
+                        <br />Manhattan &nbsp;<span style= {{ color: '#3A0CA3' }}>&#9679;</span>
+                        <br />Bronx &nbsp;<span style= {{ color: '#7209B7' }}>&#9679;</span>
+                        <br />Bronx, Manhattan &nbsp;<span style= {{ color: '#4361EE' }}>&#9679;</span>
+                        <br />Brooklyn &nbsp;<span style= {{ color: '#F72585' }}>&#9679;</span>
+                        <br />Brooklyn, Manhattan, Queens &nbsp;<span style= {{ color: '#4CC9F0' }}>&#9679;</span>
+                        <br />Manhattan, Bronx, Brooklyn &nbsp;<span style= {{ color: '#4CC9F0' }}>&#9679;</span>
+                        <br />Queens &nbsp;<span style= {{ color: '#4CC9F0' }}>&#9679;</span>
+                    </div>
                 </div>
                 <div className='flex-child'>
                     <svg ref={svgRef} style={{ display: 'block', margin: 'auto' }}></svg>

@@ -240,6 +240,41 @@ blockquote::after {
   color: #686868;
 }
 
+hr.light {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+}
+
+/* data table */
+#tableContainer {
+  background-color: rgba(240, 236, 227, 0.25);
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 0.8em;
+  line-height: 1.2;
+  width: 80vw;
+  border: 1px solid black;
+  padding: 0.5em;
+  border-collapse: collapse;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+#tableContainer th {
+  text-align: right;
+  border-bottom: 1px solid #97BFB4;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
+
+#tableContainer th:first-child {
+  text-align: left;
+}
+
+#tableContainer td {
+  text-align: right;
+  padding-top: 0.5em;
+}
+
 /* scrollytelling */
 
 .container {

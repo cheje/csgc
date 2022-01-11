@@ -1,7 +1,7 @@
 import React from "react"
+import TCIETable from './TCIETable'
 import StackedBars from './StackedBars'
 import './index.css'
-import tcieDataSS from './img/tcie-dataset-head.png'
 
 export default function Dataset() {
     return (
@@ -32,8 +32,10 @@ export default function Dataset() {
                 <p>
                     The TCIE dataset contains 29,298 unique BBLs and appears as follows:
                 </p>
-                    <img width='500px' alt='Screenshot of sample of TCIE dataset' src={tcieDataSS} style={{ boxShadow: '1px 2px 5px rgba(0, 0, 0, 0.1)', display: 'block', margin: 'auto' }} />
-                <p className='vis-caption' style={{ paddingTop: '1em', textAlign: 'center' }}>
+            </section>
+                <TCIETable />
+            <section>
+                <p className='vis-caption' style={{ textAlign: 'left' }}>
                     The dataset will be made public in 2022. <a href='mailto:barbara.gray@journalism.cuny.edu'>Contact Barbara Gray</a> for more details.
                 </p>
                 <p>
