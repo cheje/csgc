@@ -1,6 +1,6 @@
 import React from "react"
-import './index.css'
-import ghLogo from './img/GitHub-Mark-Light-64px.png'
+import './../index.css'
+import ghLogo from './../img/GitHub-Mark-Light-64px.png'
 
 export default function Footer() {
     return (

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './index.css';
+import './../index.css';
 import * as d3 from 'd3';
 import scrollama from 'scrollama';
 

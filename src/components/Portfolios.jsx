@@ -1,5 +1,5 @@
 import React from "react"
-import './index.css'
+import './../index.css'
 import Bubbles from './Bubbles'
 
 export default function Portfolios() {

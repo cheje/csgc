@@ -1,7 +1,7 @@
 import React from 'react'
-import './index.css'
-import expensesSS from './img/shiny-expenses.png'
-import crSS from './img/shiny-cr.png'
+import './../index.css'
+import expensesSS from './../img/shiny-expenses.png'
+import crSS from './../img/shiny-cr.png'
 
 export default function Shiny() {
     return(

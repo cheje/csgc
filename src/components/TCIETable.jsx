@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
-import './index.css'
+import './../index.css'
 
 export default function TCIETable() {
   const tableRef = useRef();
@@ -9,13 +9,6 @@ export default function TCIETable() {
     d3.csv(
       'https://gist.githubusercontent.com/cheje/2268eca91c7d2e1cb582e2140da6b283/raw/05969f55bd30a63e8e3739d971856a4ae661f3b4/tcie-n10.csv'
     ).then((data) => {
-      const width = 800;
-      const height = 500;
-
-      const tableContainer = d3
-        .select(tableRef.current)
-        .attr('width', width)
-        .attr('height', height);
 
       const tcieData = data
         .map((d) => ({
@@ -32,7 +25,8 @@ export default function TCIETable() {
           'Total Expenses ($)': d['Total Expenses']
         }))
 
-      const table = d3.select('#tableContainer').append('table');
+      const table = d3.select(tableRef.current)
+      .append('table')
 
       const columns = [
         'BBL',
@@ -69,6 +63,6 @@ export default function TCIETable() {
   }, []);
 
   return (
-  <div id="tableContainer" ref={tableRef} style={{ display: 'block', margin: 'auto' }}></div>
+    <div id="tableContainer" ref={tableRef} style={{ display: 'block', margin: 'auto' }}></div>
   )
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import TCIETable from './TCIETable'
 import StackedBars from './StackedBars'
-import './index.css'
+import './../index.css'
 
 export default function Dataset() {
     return (

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import * as d3 from 'd3'
-import './index.css'
+import './../index.css'
 
 export default function StackedBars() {
 
