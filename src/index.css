@@ -18,25 +18,8 @@ body {
 
 a, a:hover, a:visited {
   text-decoration: none;
-  color: #82768C;
+  color: #0F52BA;
 }
-
-/* .header {
-  background-image: url("/img/nyc-bk-satellite.jpg");
-  background-color: #293F32;
-  color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -70px;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
-} */
-
-/* .header {
-  background-image: url("/img/sbk014-transparent.png");
-  background-repeat: no-repeat;
-  background-size: 2500px;
-  background-position: center -1150px;
-} */
 
 .header {
   background-image: url("./img/sbk014-black.png");
@@ -240,7 +223,7 @@ blockquote::after {
   color: #686868;
 }
 
-hr.light {
+hr.dashed {
   border: 0;
   border-bottom: 1px dashed #ccc;
   background: #999;
@@ -248,7 +231,7 @@ hr.light {
 
 /* data table */
 #tableContainer {
-  background-color: rgba(240, 236, 227, 0.25);
+  background-color: rgba(240, 236, 227, 0.35);
   font-family: 'Roboto', 'sans-serif';
   font-size: 0.8em;
   line-height: 1.2;
