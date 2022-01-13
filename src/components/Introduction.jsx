@@ -1,0 +1,20 @@
+import React from "react"
+import './../index.css'
+
+export default function Background() {
+    return (
+            <section style={{paddingTop: "50px"}}>
+                {/* <h4 className="subhead" style={{paddingTop: "50px"}}>Background</h4> */}
+                <p>
+                    In 2020, news and opinion headlines in New York City’s leading newspapers depicted the seemingly alarming effect of the COVID-19 pandemic on city real estate. Rich neighborhoods "<a href='https://www.nytimes.com/interactive/2020/05/15/upshot/who-left-new-york-coronavirus.html' target='_blank'>emptied out</a>", the pandemic has "<a href='https://nypost.com/2020/07/10/covid-19-has-broken-nycs-housing-market/' target='_blank'>broken</a>" the housing market, data show a "<a href='https://nypost.com/2020/11/14/new-stats-reveal-massive-nyc-exodus-amid-coronavirus-crime/' target='_blank'>massive NYC exodus</a>."</p>
+                <p>
+                    But a year later, as the city remained mired in the pandemic, the housing market  "<a href='https://www.nytimes.com/2021/10/05/realestate/new-york-real-estate-sales.html' target='_blank'>surged</a>", "<a href='https://www.nytimes.com/2021/12/29/nyregion/chelsea-nyc-coronavirus.html' target='_blank'>bounce[d] back</a>", "made a <a href='https://www.nytimes.com/2021/12/31/realestate/in-2021-new-yorks-housing-market-made-a-stunning-comeback.html' target='_blank'>stunning comeback</a>", and "<a href='https://www.wsj.com/articles/manhattan-luxury-home-sales-skyrocketed-in-2021-11641301201' target='_blank'>skyrocketed</a>." These headlines  suggest that real estate has not just recovered, but is on the verge of a boom – that is, to follow the cycle detailed in the November 2020 report "<a href='https://unhp.org/pdf/Foreclosure_Report_V111.pdf' target='_blank'>Corporate Windfalls or Social Housing Conversions?</a>" released by the nonprofit Community Service Society of New York. As described, the market cycles from a "euphoria" stage high to a "crisis" stage low. But despite these contrasting stages, for investors, each stage whether high or low has the potential for profit or at least anticipated profit. Meanwhile, for the tenants living in buildings that catch investors' eyes, the cycle resembles more of a line, of perpetual rent increases and lack of maintenance (Hornbach et al. 2020, 4). The pandemic certainly sparked extraordinary circumstances that left many unable to pay their rent, and debts mounting for both tenants and landlords.
+                </p>
+                <p>
+                    But at the root of these tensions is the reality that tenant fears of increasing rent and displacement, service cuts and deferred building maintenance, and changing ownership, stretch back to decades before the pandemic (Hornbach et al. 2020, 3). Within the past 25 years, tax reform, lending deregulation, cuts in urban funding, and the increasing growth and influence of the financial service industry paved the way for the financialization of housing (Gray 2021; Hornbach et al. 2020, 8; Klein et al., n.d., 20). Investors will scout out locations in which they foresee large-scale changes, such as rezoning and infrastructure development, in anticipation of real estate profits. This approach, known as property speculation, encourages predatory practices that push out long-term tenants (Klein et al. 19). 
+                </p>
+                <p>
+                    Both the headlines and the real estate cycle, obscure the reality for many renters in New York, that much of the ongoing housing crises did not emerge during the pandemic; rather the pandemic exacerbated a situation some 25 years in the making. For my capstone project, with these considerations as the backdrop, I will explore and visualize a dataset of landlord incomes and expenses to see how visualizations can serve to navigate through the data, pinpoint indicators of speculation, and help find the stories of tenants in a city of persistent precarity.</p>
+            </section>
+    )
+}
