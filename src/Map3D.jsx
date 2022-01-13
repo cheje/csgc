@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Map3D.css';
 import scrollama from 'scrollama';
-import 'mapbox-gl/dist/mapbox-gl.css';
+// import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
 
 // @ts-ignore

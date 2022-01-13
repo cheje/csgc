@@ -87,7 +87,7 @@ export default function Bubbles() {
                     <div className='chart--title' style={{ paddingTop: '2em'}}>Who Owns the Most Buildings?</div>
                     <br />These landlords have amassed the highest number of properties found in the TCIE data. As indicated in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>purple</span>, many of these portfolios are made up of buildings in <span style={{ color: '#3A0CA3', fontWeight: 'bold' }}>Manhattan</span>. Hover over a bubble to see details.<br /><br />
                     <p className='vis-caption-small'>Data sources: TCIE, PLUTO</p>
-                    <hr className='light' />
+                    <hr className='dashed' />
                     <div style= {{ textAlign: 'right' }}>
                         <br />Manhattan &nbsp;<span style= {{ color: '#3A0CA3' }}>&#9679;</span>
                         <br />Bronx &nbsp;<span style= {{ color: '#7209B7' }}>&#9679;</span>
