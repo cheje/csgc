@@ -18,7 +18,7 @@ body {
 
 a, a:hover, a:visited {
   text-decoration: none;
-  color: #0F52BA;
+  color: #0466c8;
 }
 
 .header {
@@ -89,18 +89,25 @@ code {
   height: 20px;
 }
 
-.footer--links {
-  justify-content: 'flex-end';
-  background-color: #293F32;
-  padding: 1.5em;
-  font-size: 1em;
-  font-family: 'Roboto Condensed', 'sans-serif';
+.footer--bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9em;
 }
 
-.footer--links a {
-  color: white;
-  text-decoration: none;
+.footer--text {
+  font-size: 1em;
+  font-family: 'Roboto Condensed', 'sans-serif';
   text-transform: uppercase;
+}
+
+.footer--text a {
+  color: white;
+  text-decoration: none;  
+}
+
+.footer--text img {
+ width: 15px;
 }
 
 ul {
@@ -351,4 +358,15 @@ a.button--link {
 
 .tooltip div {
   padding: 10px;
+}
+
+.scroll-button {
+  position: fixed; 
+  width: 100%;
+  left: 45%;
+  bottom: 30px;
+  height: 40px;
+  z-index: 1;
+  cursor: pointer;
+  color: #24A19C;
 }

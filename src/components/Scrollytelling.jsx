@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import './../index.css';
-import * as d3 from 'd3';
-import scrollama from 'scrollama';
+import React, { useRef } from 'react'
+import './../index.css'
+import * as d3 from 'd3'
+import scrollama from 'scrollama'
 
 export default function Scrollytelling() {
   const svgRef = useRef();
