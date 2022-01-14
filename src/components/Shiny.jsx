@@ -9,6 +9,9 @@ export default function Shiny() {
             <div style={{ paddingBottom: '50px' }}>
                 <p>Explore the data points in the dashboards linked below. Thousands of points still remain but in this case, you can zoom in to specific regions and see not just buildings involving potential speculation, but also regions where clusters exist. In those cases, large-scale development projects might be on the horizon.</p>
             </div>
+            <div className=''>
+
+            </div>
             <div className='flex-container-shiny'>
                 <div className='flex-child'>
                     <ul>
