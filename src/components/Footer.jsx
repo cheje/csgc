@@ -1,22 +1,24 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 import './../index.css'
 import ghLogo from './../img/GitHub-Mark-Light-64px.png'
 
 export default function Footer() {
     return (
-        <div style={{ backgroundColor: '#293F32' }}>
+        <footer>
             <section className='footer--bar footer--text'>
-                <div className='footer--left'>
-                    <a href='https://github.com/cheje/csgc' target='_blank'>
-                        <img alt='GitHub logo' src={ghLogo}/>
-                    </a>&nbsp;&nbsp;
-                    White Paper&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href='mailto:jcheng1@gradcenter.cuny.edu'>Email</a>
+                <div className='footer--left nav--text'>
+                    <ul>
+                        <li><a href='https://github.com/cheje/csgc' target='_blank'><img alt='GitHub logo' src={ghLogo}/></a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/resources">Resources</Link></li>
+                        <li><a href='mailto:jcheng1@gradcenter.cuny.edu' target='_blank' rel='noopener noreferrer'>Email</a></li>
+                    </ul>
                 </div>
-                <div className='footer--right' onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-                    Return to Top &#8593;
+                <div className='footer--right'>
                 </div>
             </section>
-        </div>
+        </footer>
     )
 }

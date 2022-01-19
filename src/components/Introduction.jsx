@@ -3,7 +3,7 @@ import './../index.css'
 
 export default function Background() {
     return (
-            <section style={{paddingTop: "50px"}}>
+            <section style={{paddingTop: "2rem"}}>
                 <p>
                     In 2020, news and opinion headlines in New York City’s leading newspapers depicted the seemingly alarming effect of the COVID-19 pandemic on city real estate. Rich neighborhoods "<a href='https://www.nytimes.com/interactive/2020/05/15/upshot/who-left-new-york-coronavirus.html' target='_blank'>emptied out</a>", the pandemic has "<a href='https://nypost.com/2020/07/10/covid-19-has-broken-nycs-housing-market/' target='_blank'>broken</a>" the housing market, data show a "<a href='https://nypost.com/2020/11/14/new-stats-reveal-massive-nyc-exodus-amid-coronavirus-crime/' target='_blank'>massive NYC exodus</a>."</p>
                 <p>
