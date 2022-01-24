@@ -8,19 +8,18 @@ import Header from './components/Header'
 import Introduction from './components/Introduction'
 import Dataset from './components/Dataset'
 import Visualizations from './components/Visualizations'
-import Map3D from './components/Map3D'
-import config from './components/config.js'
 import End from './components/End'
 import ScrollTop from './components/ScrollTop'
+import Mapbox from './components/Mapbox.jsx'
 
 export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Navigation />}>
+        <Route path='/' element={<Navigation />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="resources" element={<Resources />} />
+          <Route path='about' element={<About />} />
+          <Route path='resources' element={<Resources />} />
         </Route>
       </Routes>
     </HashRouter>
@@ -34,7 +33,7 @@ function Home() {
       <Introduction />
       <Dataset />
       <Visualizations />
-      <Map3D {...config} />
+      <Mapbox />
       <End />
       <ScrollTop />
     </div>

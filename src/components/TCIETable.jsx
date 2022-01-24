@@ -1,32 +1,29 @@
-import React, { useRef, useEffect } from 'react';
-import * as d3 from 'd3';
+import React, { useRef, useEffect } from 'react'
+import * as d3 from 'd3'
 import './../index.css'
 
 export default function TCIETable() {
-  const tableRef = useRef();
+  const tableRef = useRef()
 
   useEffect(() => {
     d3.csv(
       'https://gist.githubusercontent.com/cheje/2268eca91c7d2e1cb582e2140da6b283/raw/05969f55bd30a63e8e3739d971856a4ae661f3b4/tcie-n10.csv'
-    ).then((data) => {
+    ).then(data => {
+      const tcieData = data.map(d => ({
+        BBL: d.BBL,
+        'Regulated Apt Income ($)': d['Regulated Apt Income'],
+        'Unregulated Apt Income ($)': d['Unregulated Apt Income'],
+        'Total Apartment Rental Income ($)': d['Total Apartment Rental Income'],
+        'Office Income ($)': d['Office Income'],
+        'Retail Units ($)': d['Retail Units'],
+        'Retail Income ($)': d['Retail Income'],
+        'Owner Occupied Income ($)': d['Owner Occupied Income'],
+        'Govt Rent Subsidies Income ($)': d['Govt Rent Subsidies Income'],
+        'Total Housing Units ($)': d['Total Housing Units'],
+        'Total Expenses ($)': d['Total Expenses'],
+      }))
 
-      const tcieData = data
-        .map((d) => ({
-          BBL: d.BBL,
-          'Regulated Apt Income ($)': d['Regulated Apt Income'],
-          'Unregulated Apt Income ($)': d['Unregulated Apt Income'],
-          'Total Apartment Rental Income ($)': d['Total Apartment Rental Income'],
-          'Office Income ($)': d['Office Income'],
-          'Retail Units ($)': d['Retail Units'],
-          'Retail Income ($)': d['Retail Income'],
-          'Owner Occupied Income ($)': d['Owner Occupied Income'],
-          "Govt Rent Subsidies Income ($)": d["Govt Rent Subsidies Income"],
-          'Total Housing Units ($)': d['Total Housing Units'],
-          'Total Expenses ($)': d['Total Expenses']
-        }))
-
-      const table = d3.select(tableRef.current)
-      .append('table')
+      const table = d3.select(tableRef.current).append('table')
 
       const columns = [
         'BBL',
@@ -40,16 +37,16 @@ export default function TCIETable() {
         "Gov't Rent Subsidies Income ($)",
         'Total Real Estate Income ($)',
         'Total Expenses ($)',
-      ];
-     table
+      ]
+      table
         .append('thead')
         .append('tr')
         .selectAll('th')
         .data(columns)
         .join('th')
-        .text((d) => d)
+        .text(d => d)
 
-    table
+      table
         .append('tbody')
         .selectAll('tr')
         .data(tcieData)
@@ -59,10 +56,8 @@ export default function TCIETable() {
         .data(d => Object.values(d))
         .join('td')
         .text(d => d)
-    });
-  }, []);
+    })
+  }, [])
 
-  return (
-    <div id="tableContainer" ref={tableRef} style={{ display: 'block', margin: 'auto' }}></div>
-  )
+  return <div id='tableContainer' ref={tableRef} style={{ display: 'block', margin: 'auto' }}></div>
 }
