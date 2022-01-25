@@ -16,21 +16,56 @@ export default function End() {
           For full citations, see the bibliography page of the white paper [<i>link coming soon</i>].
         </p>
 
-        <h5 className='subsubhead'>Related links</h5>
-
-        <ul>
-          <li>
-            <a
-              href='https://datajournalism.com/read/longreads/humanising-data-connecting-numbers-and-people'
-              target='_blank'
-              rel='noopener noreferrer'>
-              Humanising data: Connecting numbers and people
-            </a>
-            , <i>December 29, 2021</i>
-          </li>
-        </ul>
+        <div className='highlight-box'>
+          <h5 className='subsubhead' style={{ marginTop: '-1rem' }}>
+            Related links
+          </h5>
+          <ul>
+            <li>
+              <a
+                href='https://datajournalism.com/read/longreads/humanising-data-connecting-numbers-and-people'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Humanising data: Connecting numbers and people
+              </a>
+              , <i>December 29, 2021</i>
+            </li>
+            <li>
+              <a href='https://www.nber.org/papers/w29516' target='_blank' rel='noopener noreferrer'>
+                Racial Discrimination and Housing Outcomes in the United States Rental Market
+              </a>
+              , <i>November 2021</i>
+            </li>
+            <li>
+              <a
+                href='https://www.bloomberg.com/graphics/2021-new-york-property-tax-benefits-rich'
+                target='_blank'
+                rel='noopener noreferrer'>
+                How a $2 Million Condo in Brooklyn Ends Up With a $157 Tax Bill
+              </a>
+              , <i>October 14, 2021</i>
+            </li>
+            <li>
+              <a
+                href='https://www.bloomberg.com/graphics/2021-nyc-taxes-hdfc-coops'
+                target='_blank'
+                rel='noopener noreferrer'>
+                New York’s Real Estate Tax Breaks Are Now a Rich-Kid Loophole
+              </a>
+              , <i>October 8, 2021</i>
+            </li>
+            <li>
+              <a
+                href='https://www.bloomberg.com/graphics/2021-urban-highways-infrastructure-racism'
+                target='_blank'
+                rel='noopener noreferrer'>
+                What It Looks Like to Reconnect Black Communities Torn Apart by Highways
+              </a>
+              , <i>July 28, 2021</i>
+            </li>
+          </ul>
+        </div>
         <br />
-        <hr className='dashed' />
         <p style={{ fontStyle: 'italic' }}>
           This project makes up the digital component of the capstone requirement for the M.S. program in{' '}
           <a

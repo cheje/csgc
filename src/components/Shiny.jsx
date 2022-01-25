@@ -96,7 +96,7 @@ export default function Shiny() {
             fontWeight: 'bold',
             fontSize: '0.9em',
           }}>
-          Scroll down &nbsp;&nbsp;<i class='arrow arrow-down'></i>
+          Scroll down (map in progress) &nbsp;&nbsp;<i class='arrow arrow-down'></i>
         </p>
       </div>
     </section>

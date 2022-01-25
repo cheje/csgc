@@ -14,11 +14,11 @@ export default function Scrollytelling() {
       console.log(data[1])
 
       const width = 800
-      const height = 750
+      const height = 725
 
       const svg = d3.select(svgRef.current).attr('width', width).attr('height', height)
 
-      const projection = d3.geoAlbers().fitSize([800, 750], data)
+      const projection = d3.geoAlbers().fitSize([800, 725], data)
 
       svg
         .append('g')
@@ -26,18 +26,18 @@ export default function Scrollytelling() {
         .data(data.features)
         .enter()
         .append('path')
-        .attr('fill', '#d0d9cd')
+        .attr('fill', 'rgba(158, 166, 156, 0.45)')
         .attr('d', d3.geoPath().projection(projection))
-        .style('stroke', 'rgba(255,255,255,0.5)')
+        .style('stroke', 'rgba(229, 240, 213, 1)')
 
-      svg
-        .append('text')
-        .attr('x', '50%')
-        .attr('y', '85%')
-        .html(
-          `Data sources: NYC Planning (<a href='https://www1.nyc.gov/site/planning/data-maps/open-data/census-download-metadata.page' target='_blank'>NTAs GeoJSON</a>), TCIE, PLUTO`
-        )
-        .attr('class', 'vis-caption-small')
+      // svg
+      //   .append('text')
+      //   .attr('x', '50%')
+      //   .attr('y', '85%')
+      //   .html(
+      //     `Data sources: NYC Planning (<a href='https://www1.nyc.gov/site/planning/data-maps/open-data/census-download-metadata.page' target='_blank'>NTAs GeoJSON</a>), TCIE, PLUTO`
+      //   )
+      //   .attr('class', 'vis-caption-small')
 
       d3.json(
         'https://gist.githubusercontent.com/cheje/fb731829fb4fe824f32f675c9fca880f/raw/0125a55d280661b27ac2686d90e3bc42a27c438c/tcie-points.geojson'

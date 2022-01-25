@@ -95,10 +95,9 @@ export default function Bubbles() {
           . Hover over a bubble to see details.
           <br />
           <br />
-          <p className='vis-caption-small'>Data sources: TCIE, PLUTO</p>
+          {/* <p className='vis-caption-small'>Data sources: TCIE, PLUTO</p> */}
           <hr className='dashed' />
           <div style={{ textAlign: 'right' }}>
-            <br />
             Manhattan &nbsp;<span style={{ color: '#3A0CA3' }}>&#9679;</span>
             <br />
             Bronx &nbsp;<span style={{ color: '#7209B7' }}>&#9679;</span>
