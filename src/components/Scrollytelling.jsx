@@ -109,9 +109,9 @@ export default function Scrollytelling() {
           this percentage could be explained by a variety of factors, one of them being that the landlord is deferring
           or ignoring maintenance to push out tenants, especially in gentrifying neighborhoods (Hornbach et al. 2020,
           10). Highlighting this variable is one of numerous ways to narrow the data down a bit. The 35% number is used
-          here as a threshold of a building not being well maintained, based on calculations done by the University
-          Neighborhood Housing Program, according to Jacob Udell in a conversation on October 19, 2021 with Professor
-          Gray's class.
+          here as a threshold of a building not being consistently well maintained, based on calculations done by the
+          University Neighborhood Housing Program, according to Jacob Udell in a conversation on October 19, 2021 with
+          Professor Gray's class.
         </div>
         <div class='step'>
           <mark style={{ backgroundColor: 'rgba(255, 235, 77, 0.5)' }}>Cap rates of 3.5% or lower</mark> (including

@@ -14,7 +14,8 @@ export default function Shiny() {
           <a href='https://arielpa.nyc/investor-relations/research-reports' rel='noopener noreferrer'>
             Ariel Property Advisors
           </a>
-          :
+          ' 2021 Mid-Year Sales Report of multifamily transactions of 10+ residential units. The table includes, for
+          each year and borough, the average cap rate.
         </p>
         <TableCR />
         <br />
@@ -102,12 +103,12 @@ export default function Shiny() {
           specific buildings of possible interest, which are highlighted in the final visualization. I looked in city
           media outlets for housing stories from 2021 in the context of local development, gentrification, complaints,
           and other possible indicators of speculation and distress, and selected stories that covered a building found
-          close to one in the TCIE dataset. From there, I went to see if the expense history of that data point might
-          give clues supporting its reported situation or potential future status, for example, given upcoming nearby
-          development. This is not meant to imply correlation or any direct influence between these expenses and the
-          speculative status of a building but instead to see how variables like operating costs and cap rates could
-          factor into properties located in areas on the verge of large-scale development, or associated with other
-          possible signs of speculation.
+          in, or close to one found in, the TCIE dataset. From there, I went to see if the expense history of that data
+          point might give clues supporting its reported situation or potential future status, for example, given
+          upcoming nearby development. This is not meant to imply correlation or any direct influence between these
+          expenses and the speculative status of a building but instead to see how variables like operating costs and
+          cap rates could factor into properties located in areas on the verge of large-scale development, or associated
+          with other possible signs of speculation.
         </p>
         <p
           style={{

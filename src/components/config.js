@@ -28,7 +28,7 @@ export const config = {
       title: '267 Cherry Street, 275 South Street (Manhattan)',
       image: cherry,
       description: `According to <a href="https://boweryboogie.com/2021/11/chetrit-buys-into-two-bridges-waterfront-while-starrett-lists-for-100m/" target="_blank" rel="noopener noreferrer">Bowery Boogie</a>, a seventy-story, two-tower development is planned for the Lower East Side waterfront at 265 South Street. How might that impact tenants in surroundings buildings? The expenses history of two of those:`,
-      link: '(<a href="${cherry}">enlarge image</a>)',
+      link: `(<a href="${cherry}">enlarge image</a>)`,
       location: {
         center: [-73.98904, 40.71183],
         zoom: 16.5,
@@ -41,7 +41,7 @@ export const config = {
       title: '101 Delancey Street, 96 Orchard Street (Manhattan)',
       image: delancey,
       description: `A "controversial landlord" purchased the Sago Hotel (120 Allen Street) on the Lower East Side near the corner of Delancey and Allen for $8.5 million, reports <a href="https://boweryboogie.com/2021/06/landlord-michael-shah-nabs-sago-hotel-on-orchard-street-for-8-5m/" target="_blank" rel="noopener noreferrer">Bowery Boogie</a>. He also bought 96 Orchard Street, the expenses snapshot of which along with another building in the area is shown below:`,
-      link: '(<a href="${delancey}">enlarge image</a>)',
+      link: `(<a href="${delancey}">enlarge image</a>)`,
       location: {
         center: [-73.98891, 40.71849],
         zoom: 17,
@@ -54,7 +54,7 @@ export const config = {
       title: '252 Kent Avenue (Brooklyn)',
       description: `In December 2021, the City Council approved River Ring, a "massive new development on the Williamsburg waterfront," reports <a href="https://www.brooklynpaper.com/city-council-votes-to-approve-river-ring-clearing-the-way-for-massive-waterfront-williamsburg-development/" target="_blank" rel="noopener noreferrer">Brooklyn Paper</a>. What might that mean for the tenants of neighboring buildings? Such as this one:`,
       image: kent,
-      link: '(<a href="${kent}">enlarge image</a>)',
+      link: `(<a href="${kent}">enlarge image</a>)`,
       location: {
         center: [-73.96614, 40.71654],
         zoom: 17,
@@ -67,7 +67,7 @@ export const config = {
       title: '47-07 Vernon Boulevard, 10-12 47 Avenue (Queens)',
       description: `According to a survey, Hunters Point in Long Island City is the "third most apartment-crazed neighborhood" in the U.S., writes <a href="https://qns.com/2021/12/new-survey-shows-hunters-point-is-third-most-apartment-crazed-neighborhood-in-u-s/" target="_blank" rel="noopener noreferrer">QNS</a>. The nearly 5,500 new rental units added to Hunters Point in the past five years make up 53% of all new apartments in Queens. See the expense history of two buildings in the neighborhood:`,
       image: vernon,
-      link: '(<a href="${vernon}">enlarge image</a>)',
+      link: `(<a href="${vernon}">enlarge image</a>)`,
       location: {
         center: [-73.95296, 40.74519],
         zoom: 16,
@@ -80,7 +80,7 @@ export const config = {
       title: '106-18 Northern Boulevard (Queens)',
       description: `According to <a href="https://qns.com/2021/05/planned-25-story-luxury-development-in-corona-slated-for-completion-in-2024/" target="_blank" rel="noopener noreferrer">QNS</a>, a high-end hotel and luxury residential development is planned for Corona on Northern Boulevard. How might that affect residents of nearby buildings? The expense percentage of this one has risen in the past few years:`,
       image: nblvd,
-      link: '(<a href="${nblvd}">enlarge image</a>)',
+      link: `(<a href="${nblvd}">enlarge image</a>)`,
       location: {
         center: [-73.86213, 40.75752],
         zoom: 17,
