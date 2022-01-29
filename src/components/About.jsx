@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Title from './Title'
-import './../index.css'
+import './../app.css'
 
 export default function About() {
   return (
@@ -31,7 +31,7 @@ export default function About() {
         <br />
         <b>Matt Gold</b>, program director, M.S. Program in Data Analysis and Visualization
         <br />
-        <b>Barbara Gray</b>, chief librarian, Craig Newmark Graduate School of Journalism
+        <b>Barbara Gray</b>, chief librarian and associate professor, Craig Newmark Graduate School of Journalism
         <br />
         <b>Jason Nielsen</b>, program coordinator, M.S. Program in Data Analysis and Visualization
       </section>

@@ -4,6 +4,10 @@ import { config } from './config.js'
 import mapboxgl, { layer } from 'mapbox-gl'
 import scrollama from 'scrollama'
 
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
+
 export default function Map() {
   const ref = useRef()
 
@@ -77,10 +81,16 @@ export default function Map() {
       var container = document.createElement('div')
       var chapter = document.createElement('div')
 
-      if (record.title) {
-        var title = document.createElement('h3')
-        title.innerText = record.title
-        chapter.appendChild(title)
+      // if (record.title) {
+      //   var title = document.createElement('h3')
+      //   title.innerText = record.title
+      //   chapter.appendChild(title)
+      // }
+
+      if (record.description) {
+        var story = document.createElement('p')
+        story.innerHTML = record.description
+        chapter.appendChild(story)
       }
 
       if (record.image) {
@@ -89,9 +99,9 @@ export default function Map() {
         chapter.appendChild(image)
       }
 
-      if (record.description) {
+      if (record.link) {
         var story = document.createElement('p')
-        story.innerHTML = record.description
+        story.innerHTML = record.link
         chapter.appendChild(story)
       }
 

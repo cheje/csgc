@@ -1,6 +1,6 @@
 import React from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
-import './index.css'
+import './app.css'
 import Navigation from './components/Navigation'
 import About from './components/About'
 import Resources from './components/Resources'

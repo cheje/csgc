@@ -1,5 +1,5 @@
 import React from 'react'
-import './../index.css'
+import './../app.css'
 
 export default function End() {
   return (
@@ -21,6 +21,15 @@ export default function End() {
             Related links
           </h5>
           <ul>
+            <li>
+              <a
+                href='https://www.newyorker.com/news/daily-comment/what-a-fire-in-the-bronx-says-about-immigrant-life-in-new-york'
+                target='_blank'
+                rel='noopener noreferrer'>
+                What a Fire in the Bronx Says About Immigrant Life in New York
+              </a>
+              , <i>January 21, 2022</i>
+            </li>
             <li>
               <a
                 href='https://datajournalism.com/read/longreads/humanising-data-connecting-numbers-and-people'

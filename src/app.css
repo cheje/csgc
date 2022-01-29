@@ -74,6 +74,13 @@ h5.subsubhead {
   padding: 1rem 0;
 }
 
+h5.subsubnormal {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
 section {
   width: 50vw;
   margin: 0 auto;
@@ -293,11 +300,23 @@ hr.dashed {
   text-align: right;
   border-bottom: 1px solid #97bfb4;
   padding-bottom: 0.5em;
-  padding-left: 1em;
+  vertical-align: bottom;
 }
 
 #tableContainer th:first-child {
   text-align: left;
+}
+
+#tableContainer th:not(:last-child) {
+  padding-right: 1em;
+}
+
+#tableContainer td:first-child {
+  text-align: left;
+}
+
+#tableContainer td:not(:last-child) {
+  padding-right: 1em;
 }
 
 #tableContainer td {

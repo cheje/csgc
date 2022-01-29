@@ -1,6 +1,6 @@
 import React from 'react'
-import TCIETable from './TCIETable'
-import './../index.css'
+import TableTCIE from './TableTCIE'
+import './../app.css'
 
 export default function Dataset() {
   return (
@@ -8,11 +8,14 @@ export default function Dataset() {
       <section>
         <h4 className='text subhead'>Dataset</h4>
         <p>
-          The dataset comes from Barbara Gray, the chief librarian and associate professor at the Craig Newmark Graduate
-          School of Journalism at CUNY, who obtained the information after submitting a FOIL request of Tax Commission
-          Income and Expense filings for her ongoing Landlords Project. The project aims to reveal the complexities and
-          trends of the persisting housing crisis in New York and its impact on housing equity. New York City requires
-          owners of buildings with 10 or more income-generating units that amount to more than $40,000, to file{' '}
+          The dataset comes from Professor Barbara Gray, the chief librarian and associate professor at the Craig
+          Newmark Graduate School of Journalism at CUNY, who teaches investigative research. Gray obtained the
+          information after submitting a FOIL request for Tax Commission Income and Expense filings with the NYC
+          Department of Finance. The data was the basis for reporting in an investigative class she taught with
+          Professor Eileen Mackey in Fall 2021, for her ongoing Landlords Project. The class studied and investigated
+          the complexities and trends of the persisting housing crisis in New York and its impact on housing equity. The
+          city requires owners of buildings with 10 or more income-generating units that amount to more than $40,000, to
+          file{' '}
           <a
             href='https://www1.nyc.gov/assets/finance/downloads/pdf/rpie/rpiefilinginfo.pdf'
             target='_blank'
@@ -21,16 +24,25 @@ export default function Dataset() {
           </a>{' '}
           forms every year with the Department of Finance in order for the agency to assess property values. The content
           of these forms are considered private and exempt from FOIL requests but when the landlord appeals their tax
-          bill, and files a{' '}
+          bill and files a{' '}
           <a
             href='https://www1.nyc.gov/assets/taxcommission/downloads/pdf/tc201.pdf'
             target='_blank'
             rel='noopener noreferrer'>
             Tax Commission Income and Expense
           </a>{' '}
-          form, that data can be requested. Barbara received the dataset from the NYC Department of Taxation and Finance
-          and it spans from 2005 through 2020 (the respective incomes and expenses are of the previous year), with 2008,
-          2013 and 2017 filings yet to be provided. The dataset will be made public in 2022.
+          form, that data can be requested. The dataset that Gray received from the NYC Department of Taxation and
+          Finance spans from 2005 through 2020 (the incomes and expenses are of the previous year), with 2008, 2013 and
+          2017 filings yet to be provided. The Landlords Project focuses on a subset of this data: the more than 29,000
+          buildings where landlords receive at least part of their income from rent-stabilized apartments. This amount
+          makes up two-thirds of the more than 43,800{' '}
+          <a
+            href='https://rentguidelinesboard.cityofnewyork.us/resources/rent-stabilized-building-lists/'
+            target='_blank'
+            rel='noopener noreferrer'>
+            buildings in the city with rent stabilized units
+          </a>
+          , as of 2020. The dataset will be made public in 2022.
         </p>
         <p>
           The city requires owners of buildings with 10 or more income-generating units that amount to more than
@@ -84,7 +96,7 @@ export default function Dataset() {
         </div>
         <br />
         <p>
-          New York has approximately 1 million tax lots that include privately and publicly-owned parcels made up of
+          New York has approximately 1 million tax lots consisting of privately and publicly-owned parcels made up of
           some{' '}
           <a
             href='https://nycplanning.github.io/Geosupport-UPG/chapters/chapterVI/section01/'
@@ -105,54 +117,47 @@ export default function Dataset() {
           <a href='https://portal.311.nyc.gov/article/?kanumber=KA-01247' target='_blank' rel='noopener noreferrer'>
             used when
           </a>{' '}
-          paying property taxes and on NYC Department of Finance and tax forms (“Geosupport System: User Programming
-          Guide,” n.d.).
+          paying property taxes and on NYC Department of Finance and tax forms.
         </p>
-        <p>The TCIE dataset contains 29,298 unique BBLs and appears, partially, as follows:</p>
+        <p>The TCIE dataset contains just under 29,300 unique BBLs and appears, partially, as follows:</p>
       </section>
-      <TCIETable />
+      <TableTCIE />
       <section>
-        <p className='vis-caption' style={{ textAlign: 'left' }}>
+        <span className='vis-caption' style={{ textAlign: 'left' }}>
           The dataset will be made public in 2022.{' '}
           <a href='mailto:barbara.gray@journalism.cuny.edu'>Contact Barbara Gray</a> for more details.
-        </p>
+        </span>
         <p>
-          While the dataset does not contain every city landlord's income and expenses – only those who challenged the
-          city’s tax assessment of their property – the large number of those who did appeal their tax bill amounts to a
-          sizable sample of tens of thousands of properties per year. Through these filings we can observe, for example,
-          changes over time for buildings that appear in multiple years. We can also note outliers such as unusual
-          levels of income increases or decreases, suggesting profit-driven motives. Further, we can obtain a historical
-          snapshot of how a landlord's rent-stabilized income versus their market-rate income has changed. An increase
-          in the latter would imply that they flipped rent-stabilized units to market-rate, and in the process displaced
-          tenants in pursuit of maximizing assets.
+          While the dataset does not contain every city landlord's income and expenses – only the ones who challenged
+          the city’s tax assessment of their property – the large number of those who did appeal their tax bill amounts
+          to a sizable sample of tens of thousands of properties per year. Through these filings we can observe, for
+          example, changes over time for buildings that appear in multiple years of filings. We can also note outliers
+          such as unusual levels of income increases or decreases. Further, we can obtain a historical snapshot of how a
+          landlord's rent-stabilized income versus their market-rate income has changed. An increase in the latter could
+          suggest that they flipped rent-stabilized units to market-rate, and in the process displaced tenants (Gray
+          2021).
         </p>
 
         <h5 className='subsubhead'>Joining Other Datasets</h5>
         <p>
-          Combining the TCIE data with publicly available NYC housing datasets provides opportunity for further
-          analysis. As Barbara has been working with housing organizations and advocates on the Landlords Project, the
-          dataset has been joined with open data and public records, including those of cap rates and sale years for
-          each building. These will be explained further on in the paper. Similarly, housing organizations such as
-          JustFix.nyc use open data in tools serving tenants and supporters. The nonprofit created the{' '}
+          As Gray has been working with housing organizations and advocates on the Landlords Project, the dataset has
+          been joined with publicly available data, including those of capitalization rates and sale years for each
+          building. These will be explained further on in the paper. Similarly, housing justice organizations such as
+          JustFix.nyc use open data in tools they created to serve tenants and advocates. The nonprofit created the{' '}
           <a href='https://whoownswhat.justfix.nyc/' target='_blank' rel='noopener noreferrer'>
             Who Owns What
           </a>{' '}
           database to let users map their landlord's portfolio, a difficult task on its own given efforts by owners to
-          mask their identities. The tool compares names and addresses in building registration listings to connect
-          property ownership while also pulling in additional housing information from{' '}
-          <a href='https://whoownswhat.justfix.nyc/en/how-it-works' target='_blank' rel='noopener noreferrer'>
-            city agencies and other advocacy organizations
-          </a>
-          . Similar efforts in bringing together open datasets such as on{' '}
+          mask their identities. Similar work in bringing together open datasets such as on{' '}
           <a
-            href='https://data.cityofnewyork.us/Housing-Development/Housing-Maintenance-Code-Violations/wvxf-dwi5/data'
+            href='https://data.cityofnewyork.us/Housing-Development/Housing-Maintenance-Code-Violations/wvxf-dwi5'
             target='_blank'
             rel='noopener noreferrer'>
             housing maintenance code violations
           </a>
           ,{' '}
           <a
-            href='https://data.cityofnewyork.us/Housing-Development/Housing-Litigations/59kj-x8nc/data'
+            href='https://data.cityofnewyork.us/Housing-Development/Housing-Litigations/59kj-x8nc'
             target='_blank'
             rel='noopener noreferrer'>
             housing litigations
@@ -166,7 +171,7 @@ export default function Dataset() {
           </a>{' '}
           in a central searchable location, and incorporating maps and other visuals, have also been done by other
           housing groups and government agencies. These sources provide a comprehensive view for tenants and advocates
-          to see whether their own building or neighborhood, or other places of interest, possess signs of speculation.
+          to see whether their building or neighborhood, or other places of interest, possess signs of speculation.
           <br />
           <button style={{ marginTop: '2rem' }} className='button'>
             <a href='https://airtable.com/shrgUn4Gw76RzAFDU' target='_blank' className='button--link'>
@@ -175,7 +180,7 @@ export default function Dataset() {
           </button>
         </p>
         <p>
-          With this in mind, while working at a much smaller scale, I combined the TCIE data with the NYC Department of
+          With this in mind and working at a much smaller scale, I combined the TCIE data with the NYC Department of
           City Planning's{' '}
           <a
             href='https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page'
@@ -183,9 +188,9 @@ export default function Dataset() {
             rel='noopener noreferrer'>
             Primary Land Use Tax Output (PLUTO) dataset
           </a>
-          . As the majority of the BBLs in the TCIE set were included in the PLUTO list (27,699 out of 29,298), I could
-          add addresses, neighborhoods, boroughs and owners, and other building characteristics as of 2021. The
-          visualizations found below are based on the joined TCIE-Pluto dataset.
+          . As the majority of the BBLs in the TCIE set were included in the PLUTO list (27,699 out of 29,298), this
+          meant the addition of addresses, neighborhoods, boroughs and owners, and other building characteristics, as of
+          2021. The visualizations in this project are based on the joined TCIE-Pluto dataset.
         </p>
       </section>
     </div>

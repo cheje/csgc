@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import Footer from './Footer'
-import './../index.css'
+import './../app.css'
 
 export default function Navigation() {
   return (

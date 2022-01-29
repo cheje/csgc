@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import * as d3 from 'd3'
-import './../index.css'
+import './../app.css'
 
 export default function Bubbles() {
   const svgRef = useRef()

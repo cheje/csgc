@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import * as d3 from 'd3'
-import './../index.css'
+import './../app.css'
 
 export default function TCIETable() {
   const tableRef = useRef()
@@ -19,7 +19,7 @@ export default function TCIETable() {
         'Retail Income ($)': d['Retail Income'],
         'Owner Occupied Income ($)': d['Owner Occupied Income'],
         'Govt Rent Subsidies Income ($)': d['Govt Rent Subsidies Income'],
-        'Total Housing Units ($)': d['Total Housing Units'],
+        'Total Real Estate Income ($)': d['Total Real Estate Income'],
         'Total Expenses ($)': d['Total Expenses'],
       }))
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './../index.css'
+import './../app.css'
 import ghLogo from './../img/GitHub-Mark-Light-64px.png'
 
 export default function Footer() {
