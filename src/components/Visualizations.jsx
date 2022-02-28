@@ -75,8 +75,11 @@ export default function Visualizations() {
           In cases of "declining investment" in a building, landlords, investors and lenders might consider this an
           opportunity for reinvestment and gentrification (134). As is happening during the pandemic, and other periods,
           when some landlords cannot keep up with mortgage payments, their building plummets in value and ends up facing
-          financial distress, and risk of being foreclosed (Hornbach et al. 2020, 5). Indicators of distress include
-          lawsuits, code violations, tenant complaints and deferred or disruptive maintenance (@UNHP).{' '}
+          financial distress, and risk of being foreclosed (Hornbach et al. 2020, 5).{' '}
+          <a href='https://twitter.com/UNHP/status/1395073922027204611' target='_blank' rel='noopener noreferrer'>
+            Indicators of distress
+          </a>{' '}
+          include lawsuits, code violations, tenant complaints and deferred or disruptive maintenance.{' '}
           <a
             href='https://www.forbes.com/sites/forbesbusinesscouncil/2021/04/05/the-dos-and-donts-of-investing-in-distressed-properties/'
             target='_blank'

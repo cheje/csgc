@@ -332,6 +332,14 @@ export default function Resources() {
           </a>
           .
         </li>
+        <li>
+          <a
+            href='https://policyviz.com/2022/02/01/the-data-visualization-tools-wars/'
+            target='_blank'
+            rel='noopener noreferrer'>
+            The Data Visualization Tools Wars
+          </a>
+        </li>
       </ul>
     </section>
   )

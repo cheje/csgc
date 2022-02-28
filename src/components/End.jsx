@@ -23,6 +23,15 @@ export default function End() {
           <ul>
             <li>
               <a
+                href='https://anhd.org/report/new-yorks-pandemic-rent-crisis'
+                target='_blank'
+                rel='noopener noreferrer'>
+                New York’s Pandemic Rent Crisis
+              </a>
+              , <i>January 31, 2022</i>
+            </li>
+            <li>
+              <a
                 href='https://www.newyorker.com/news/daily-comment/what-a-fire-in-the-bronx-says-about-immigrant-life-in-new-york'
                 target='_blank'
                 rel='noopener noreferrer'>
